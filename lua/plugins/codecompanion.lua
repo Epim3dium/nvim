@@ -45,7 +45,7 @@ codecomp.setup({
                         default = "qwen2.5-coder:3b",
                     },
                     num_ctx = {
-                        default = 1024,
+                        default = 512,
                     },
                     num_predict = {
                         default = -1,

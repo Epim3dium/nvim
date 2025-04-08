@@ -37,11 +37,11 @@ local function ollama_status()
     spinner_idx = (spinner_idx) % table.getn(spinner_symbols) + 1
 
     if code_companion_state == "processing" then
-        return '  ' .. spinner_symbols[spinner_idx];
+        return '🤖  ' .. spinner_symbols[spinner_idx];
     elseif code_companion_state == "idle" then
-        return '  ✅'
+        return '🤖 ✅'
     elseif code_companion_state == "streaming" then
-        return '   '
+        return '🤖   '
     end
 end
 
